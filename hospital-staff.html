@@ -737,6 +737,160 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 <!--begin::Dashboard-->
                                                 <!--begin::Row-->
                                                 <div class="row">
+											<div class="col-lg-12 col-xxl-12">
+												<!--begin::Mixed Widget 1-->
+
+                                                <div class="card card-custom">
+                                                    <div class="card-header flex-wrap border-0 pt-6 pb-0">
+                                                        <div class="card-title">
+                                                            <h3 class="card-label">
+                                                                Hospital Staff
+                                                                <span class="d-block text-muted pt-2 font-size-sm">Hospital Staff Details</span>
+                                                            </h3>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <!--begin: Search Form-->
+                                                        <!--begin::Search Form-->
+                                                                <div class="mb-7">
+                                                                    <div class="row align-items-center">
+                                                                        <div class="col-lg-9 col-xl-8">
+                                                                            <div class="row align-items-center">
+                                                                                <div class="col-md-4 my-2 my-md-0">
+                                                                                    <div class="input-icon">
+                                                                                        <input type="text" class="form-control" placeholder="Search..." id="kt_datatable_search_query">
+                                                                                        <span><i class="flaticon2-search-1 text-muted"></i></span>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                    <div class="col-md-4 my-2 my-md-0">
+                                                                                        <div class="d-flex align-items-center">
+                                                                                            <label class="mr-3 mb-0 d-none d-md-block">Status:</label>
+                                                                                            <div class="dropdown bootstrap-select form-control">
+                                                                                                <select class="form-control" id="kt_datatable_search_status">
+                                                                                                    <option value="">All</option>
+                                                                                                    <option value="1">Pending</option>
+                                                                                                    <option value="2">Delivered</option>
+                                                                                                    <option value="3">Canceled</option>
+                                                                                                    <option value="4">Success</option>
+                                                                                                    <option value="5">Info</option>
+                                                                                                    <option value="6">Danger</option>
+                                                                                                </select>
+                                                                                                <button type="button" tabindex="-1" class="btn dropdown-toggle btn-light bs-placeholder" data-toggle="dropdown" role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="false" data-id="kt_datatable_search_status" title="All">
+                                                                                                    <div class="filter-option"><div class="filter-option-inner">
+                                                                                                    <div class="filter-option-inner-inner">All</div></div> </div>
+                                                                                                </button>
+                                                                                                <div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-1" tabindex="-1">
+                                                                                                    <ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-4 my-2 my-md-0">
+                                                                                        <div class="d-flex align-items-center">
+                                                                                            <label class="mr-3 mb-0 d-none d-md-block">Type:</label>
+                                                                                            <div class="dropdown bootstrap-select form-control">
+                                                                                                <select class="form-control" id="kt_datatable_search_type">
+                                                                                                    <option value="">All</option>
+                                                                                                    <option value="1">Online</option>
+                                                                                                    <option value="2">Retail</option>
+                                                                                                    <option value="3">Direct</option>
+                                                                                                </select>
+                                                                                                <button type="button" tabindex="-1" class="btn dropdown-toggle btn-light bs-placeholder" data-toggle="dropdown" role="combobox" aria-owns="bs-select-2" aria-haspopup="listbox" aria-expanded="false" data-id="kt_datatable_search_type" title="All">
+                                                                                                    <div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">All</div></div> </div>
+                                                                                                </button>
+                                                                                                <div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-2" tabindex="-1">
+                                                                                                    <ul class="dropdown-menu inner show" role="presentation"></ul></div></div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-3 col-xl-4 mt-5 mt-lg-0">
+                                                                            <a href="#" class="btn btn-light-primary px-6 font-weight-bold">
+                                                                                Search
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                        <!--end::Search Form-->
+                                                        <!--end: Search Form-->
+
+                                                        <!--begin: Datatable-->
+                                                        <div class="datatable datatable-default datatable-primary datatable-loaded">
+                                                            <table class="datatable-bordered datatable-head-custom datatable-table" id="kt_datatable" style="display: block;">
+                                                                <thead class="datatable-head">
+                                                                <tr class="datatable-row" style="left: 0px;">
+                                                                <th class="datatable-cell datatable-toggle-detail"><span></span></th>
+                                                                <th data-field="Hospital Name" class="datatable-cell datatable-cell-sort">
+                                                                <span style="width: 110px;">Hospital Name</span></th>
+                                                                <th data-field="Staff ID" class="datatable-cell datatable-cell-sort">
+                                                                <span style="width: 110px;">Staff ID</span></th>
+                                                                <th data-field="Staff Name" class="datatable-cell datatable-cell-sort">
+                                                                <span style="width: 110px;">Staff Name</span></th>
+                                                                <th data-field="Staff Role" class="datatable-cell datatable-cell-sort">
+                                                                <span style="width: 110px;">Staff Role</span></th>
+                                                                <th data-field="Staff Contact No" class="datatable-cell datatable-cell-sort">
+                                                                <span style="width: 110px;">Staff Contact No</span></th>
+                                                                <th data-field="Staff Gender" class="datatable-cell datatable-cell-sort">
+                                                                <span style="width: 110px;">Staff Gender</span></th>
+                                                                <th data-field="Staff Joining Date" class="datatable-cell datatable-cell-sort">
+                                                                <span style="width: 110px;">Staff Joining Date</span></th>
+                                                                
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody style="" class="datatable-body">
+                                                                
+                                                                <tr data-row="0" class="datatable-row" style="left: 0px;">
+                                                                <td class="datatable-cell datatable-toggle-detail">
+                                                                <a class="datatable-toggle-detail" href="">
+                                                                <i class="fa fa-caret-right"></i></a></td>
+                                                                <td data-field="Hospital Name" aria-label="Ashirwad Hospital" class="datatable-cell">
+                                                                <span style="width: 110px;">Ashirwad Hospital</span></td>
+                                                                <td data-field="Staff ID" aria-label="012" class="datatable-cell">
+                                                                <span style="width: 110px;">012</span></td>
+                                                                <td data-field="Staff Name" aria-label="John Snow" class="datatable-cell">
+                                                                <span style="width: 110px;">John Snow</span></td>
+                                                                <td data-field="Staff Role" aria-label="Doctor" class="datatable-cell">
+                                                                <span style="width: 110px;">Doctor</span></td>
+                                                                <td data-field="Staff Contact No" aria-label="9898785265" class="datatable-cell">
+                                                                <span style="width: 110px;">9898785265</span></td>
+                                                                <td data-field="Staff Gender" aria-label="Male" class="datatable-cell">
+                                                                <span style="width: 110px;">Male</span></td>
+                                                                <td data-field="Staff Joining Date" aria-label="12/12/2014" class="datatable-cell">
+                                                                <span style="width: 110px;">12/12/2014</span></td>
+                                                                
+                                                                </tr>
+
+                                                                <tr data-row="0" class="datatable-row" style="left: 0px;">
+                                                                <td class="datatable-cell datatable-toggle-detail">
+                                                                <a class="datatable-toggle-detail" href="">
+                                                                <i class="fa fa-caret-right"></i></a></td>
+                                                                <td data-field="Hospital Name" aria-label="VINS Hospital" class="datatable-cell">
+                                                                <span style="width: 110px;">VINS Hospital</span></td>
+                                                                <td data-field="Staff ID" aria-label="013" class="datatable-cell">
+                                                                <span style="width: 110px;">013</span></td>
+                                                                <td data-field="Staff Name" aria-label="Sansa Stark" class="datatable-cell">
+                                                                <span style="width: 110px;">Sansa Stark</span></td>
+                                                                <td data-field="Staff Role" aria-label="Gynecologist" class="datatable-cell">
+                                                                <span style="width: 110px;">Gynecologist</span></td>
+                                                                <td data-field="Staff Contact No" aria-label="9597785265" class="datatable-cell">
+                                                                <span style="width: 110px;">9597785265</span></td>
+                                                                <td data-field="Staff Gender" aria-label="Female" class="datatable-cell">
+                                                                <span style="width: 110px;">Female</span></td>
+                                                                <td data-field="Staff Joining Date" aria-label="07/12/2013" class="datatable-cell">
+                                                                <span style="width: 110px;">07/12/2013</span></td>
+                                                                
+                                                                </tr>
+                                                            </table>
+                                                        <!--end: Datatable-->
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <!--end::Row-->
+                                                <!--end::Dashboard-->
+                                        </div>
                                                 </div>
                                                 <!--end::Row-->
                                                 <!--end::Dashboard-->
